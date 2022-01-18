@@ -4,10 +4,15 @@ services:
     image: jenkinsci/blueocean
     ports:
       - '8082:8080'
+    networks:
+      - 'rede-local'
     volumes:
       - 'volume_jenkins:/var/jenkins_home'
       - '/var/run/docker.sock:/var/run/docker.sock'
 volumes:
   volume_jenkins:
-   driver: local
+networks:
+  rede-local:
+    driver:
+     bridge
 
