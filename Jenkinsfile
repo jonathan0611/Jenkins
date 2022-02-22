@@ -3,14 +3,15 @@ pipeline {
   agent any
 
   stages {
-      stage('Build'){
+      stage('teste'){
          steps{
              echo "Pipeline Usando Jenkinsfile"
          }
       }
-   stages('Test'){
-       steps{
-           echo "pipline Usando Jenkinsfile"
+   stages {
+	stage('build'){
+       	  steps{
+            echo "pipline Usando Jenkinsfile"
        }
     }        
   }
