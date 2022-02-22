@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                echo " na stage deploy
+                echo " na stage deploy"
             }
         }
     }
